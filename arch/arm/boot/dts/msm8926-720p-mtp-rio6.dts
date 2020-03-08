@@ -1,0 +1,30 @@
+/* Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+
+/dts-v1/;
+/* Mod-BEGIN by TCTNB.Ding Erlei, 2013/09/18, rename the dtsi name for rio6 */
+/include/ "msm8926-rio6.dtsi"
+/include/ "msm8226-720p-mtp-rio6.dtsi"
+/include/ "msm8226-camera-sensor-mtp-rio6.dtsi"
+/* Mod-END by TCTNB.Ding Erlei */
+
+/ {
+	model = "Qualcomm MSM 8926 MTP";
+	compatible = "qcom,msm8926-mtp", "qcom,msm8926", "qcom,mtp";
+/* Mod-BEGIN by TCTNB.Ding Erlei, 2013/09/18, modify the hardware version for rio6 */
+	qcom,msm-id = <200 8 0x20000>;
+/* Mod-END by TCTNB.Ding Erlei */
+/*
+	qcom,board-id = <8 0>;
+*/
+};
